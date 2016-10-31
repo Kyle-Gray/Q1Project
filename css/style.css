@@ -66,3 +66,11 @@ footer.page-footer{
   height: 100%;
   width: 100%;
 }
+.bpm .row{
+display: flex;
+border: 2px solid;
+}
+.dials{
+  padding-top: 3rem;
+  vertical-align: middle;
+}

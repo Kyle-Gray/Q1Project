@@ -11,11 +11,7 @@
 // });
 
 //knob functions
-    $(".dial").knob({
-      'min':-50,
-      'max':50,
-
-    });
+    $(".dial").knob();
     //add class to all dials
     $("canvas").addClass("volumeDial");
     //makes the dials the size we need
