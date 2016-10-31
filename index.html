@@ -19,7 +19,6 @@
             <a href="#!" class="brand-logo djkg">DjKg</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
                 <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
                 <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
             </ul>
@@ -33,19 +32,17 @@
             <div id="turntable1" class="col s5">
                 <div class="row" border="2px solid">
                     <div class="row">
-
-
                         <table>
                             <thead>
                                 <tr>
-                                  <th data-field="albumArtWork">Album Art</th>
+                                    <th data-field="albumArtWork">Album Art</th>
                                 </tr>
                                 <tr>
-                                  <th data-field="artist">Artist</th>
+                                    <th data-field="artist">Artist</th>
                                 </tr>
                                 <tr>
-                                  <th data-field="album">Album</th>
-                                  <th data-field="length">Length</th>
+                                    <th data-field="album">Album</th>
+                                    <th data-field="length">Length</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -53,32 +50,6 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <!-- form to input data from spotify api
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="albumArt" type="image" class="validate">
-          <label for="albumArt">Album Art</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="artist_name" type="text" class="validate">
-          <label for="artist_name">Artist</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="album_name" type="text" class="validate">
-          <label for="album_name">Album</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <label for="length">Length</label>
-          <input id="length" type="text" class="validate">
-        </div>
-      </div>
-    </form>
-    -->
                     </div>
                 </div>
                 <!-- need to find a way to get a picture of a turntable-->
@@ -88,7 +59,7 @@
           </h3>
             </div>
             <div id="inbetween" class="col s2">
-                <!-- Hi, Medium, and Low dials need to connect to webapi -->
+                <!-- High, Medium, and Low dials need to connect to webapi -->
 
                 <div class="row dials">
                     <input type="text" class="dial" data-min="0" data-max="100" hidden="">
@@ -122,24 +93,24 @@
             <div id="turntable2" class="col s5">
                 <h3>second turn table</h3>
                 <div class="row" border="2px solid">
-                  <table>
-                      <thead>
-                          <tr>
-                            <th data-field="albumArtWork">Album Art</th>
-                          </tr>
-                          <tr>
-                            <th data-field="artist">Artist</th>
-                          </tr>
-                          <tr>
-                            <th data-field="album">Album</th>
-                            <th data-field="length">Length</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                          </tr>
-                      </tbody>
-                  </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-field="albumArtWork">Album Art</th>
+                            </tr>
+                            <tr>
+                                <th data-field="artist">Artist</th>
+                            </tr>
+                            <tr>
+                                <th data-field="album">Album</th>
+                                <th data-field="length">Length</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!--   Icon Section   -->
@@ -164,7 +135,45 @@
             </div>
 
         </div>
-        <br><br>
+        <!--   Search Form to check your folders for songs   -->
+        <div class="row">
+            <div class="folders col s4">
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                </div>
+                <h3>search local files</h3>
+            </div>
+            <!--   Table containing the actual songs   -->
+            <div class="folders col s8">
+                <table class="responsive-table striped">
+                    <thead>
+                        <tr>
+                            <th data-field="albumArt">Album Artwork</th>
+                            <th data-field="title">Title</th>
+                            <th data-field="artist">Artist</th>
+                            <th data-field="album">Album</th>
+                            <th data-field="bpm">BPM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>?</td>
+                            <td>Out the Blue</td>
+                            <td>Sub Focus</td>
+                            <td>Out the Blue</td>
+                            <td>?</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>table shows what songs are available to play</h3>
+            </div>
+        </div>
     </div>
     <!-- Footer -->
 

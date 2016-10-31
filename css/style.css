@@ -42,3 +42,7 @@ footer.page-footer{
 .row{
   margin-bottom: 0px;
 }
+.folders{
+  border: 2px solid;
+  height: 300px;
+}
