@@ -7,8 +7,7 @@
  */
 
 nav .brand-logo, .djkg{
-  position:relative;
-  float: left;
+padding-left: 10px;
 }
 #turntable1{
   display: flex;
@@ -25,8 +24,9 @@ nav .brand-logo, .djkg{
 }
 #inbetween{
   display: flex;
-    height: 200px;
+  height: 200px;
   border: 2px solid;
+  bottom: auto;
 }
 
 #copyright{
@@ -61,4 +61,8 @@ footer.page-footer{
 }
 .cover.playing {
     border: 5px solid #e45343;
+}
+.img{
+  height: 100%;
+  width: 100%;
 }
