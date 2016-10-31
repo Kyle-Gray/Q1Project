@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>DJ-KG</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <!-- Nav Bar- need to add login and sign up button -->
+    <nav>
+        <a id="logo-container" href="#" class="brand-logo">DjKg</a>
+        <i class="right-align material-icons">search<i class="right-align material-icons">settings</i></i>
+
+    </nav>
+
+    <!-- Turn Tables section -->
+    <div class="row">
+
+        <div class="row">
+        <div id="turntable1" class="col s5">
+            <h1>
+            first turn table
+          </h1>
+        </div>
+        <div id="inbetween" class="col s2">
+          <h3>BPM and Volume controls</h3>
+        </div>
+        <div id="turntable2" class="col s5">
+            <h1>second turn table</h1>
+        </div>
+        <div class="section">
+
+        </div>
+        <input type="text" class="dial" data-min="0" data-max="100" height="50px" width="50px">
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+
+    <footer class="page-footer dark-grey">
+            <div class="row">
+              <div id="copyright" class="col s6">
+                Made by <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/kyle-gray">KG.inc</a>
+              </div>
+                <div class="right-align col s6">
+                    <p class= "grey-text text-lighten-4">Follow Me!</p>
+                    <a href="kyle-gray.surge.sh"><i class="material-icons ">public</i></a>
+                    <a href="facebook.com"><i class="material-icons ">face</i></a>
+                    <a href="twitter.com"><i class="material-icons ">people</i></a>
+                </div>
+            </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/DjKg.js"></script>
+
+</body>
+
+</html>

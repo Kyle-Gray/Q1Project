@@ -1,0 +1,43 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+#turntable1{
+  display: flex;
+  height: 200px;
+  float: left;
+  border: 2px solid;
+}
+#turntable2{
+  display: flex;
+    height: 200px;
+  float: right;
+  border: 2px solid;
+
+}
+#inbetween{
+  display: flex;
+    height: 200px;
+  border: 2px solid;
+}
+.nav{
+  float: right;
+}
+
+#copyright{
+  height: 80px;
+  vertical-align: baseline;;
+}
+footer.page-footer{
+  padding-top: 0px;
+}
