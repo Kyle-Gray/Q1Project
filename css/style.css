@@ -6,11 +6,9 @@
  * Made By MaterializeCSS.com
  */
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
+nav .brand-logo, .djkg{
+  position:relative;
+  float: left;
 }
 #turntable1{
   display: flex;
@@ -29,9 +27,6 @@
   display: flex;
     height: 200px;
   border: 2px solid;
-}
-.nav{
-  float: right;
 }
 
 #copyright{
