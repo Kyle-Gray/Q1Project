@@ -27,14 +27,21 @@
                 },
                 success: function(response) {
                   // to get albums out of the object
-
+                    var arr1 = [];
+                    var arr2 = [];
                     var albumArray = response.albums.items;
                     for (var i = 0; i < albumArray.length; i++) {
-                        console.log(albumArray[i]["name"]);
-                        var albumArtArray = albumArray[i]["images"];
-                        console.log(albumArtArray[2]["url"]);
+                      var albumArtArray = albumArray[i]["images"];
+                      arr1.push(albumArray[i]["name"]);
+                      arr2.push(albumArtArray[2]["url"]);
+                      // console.log(arr1);
+
                     }
-                    resultsPlaceholder.innerHTML = response;
+                    console.log(arr2[0]);
+                    var newRow = $("tr");
+                    newRow.append($("td"),"<img src=" + arr2[0] + ">");
+                    console.log("<img src=" + arr2[0] + "/>");
+                    resultsPlaceholder.innerHTML = "<img src=" + arr2[0] + ">";
                 }
             });
         };
