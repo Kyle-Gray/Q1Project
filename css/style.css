@@ -11,33 +11,38 @@ padding-left: 10px;
 }
 #turntable1{
   display: flex;
-  height: 200px;
+  height: 250px;
   float: left;
   border: 2px solid;
+  padding-right: 0px;
 }
 #turntable2{
   display: flex;
-    height: 200px;
+    height: 250px;
   float: right;
   border: 2px solid;
-
+  padding-left: 0px;
 }
 #inbetween{
   display: flex;
-  height: 200px;
-  border: 2px solid;
+  height: 250px;
+  /*border: 2px solid;*/
   bottom: auto;
+  min-width: 100px;
 }
 
 #copyright{
   height: 80px;
-  vertical-align: baseline;;
+  vertical-align: baseline;
 }
 footer.page-footer{
   padding-top: 0px;
 }
 .dials{
   float: right;
+}
+.tablepic{
+  width: 70%;
 }
 .row{
   margin-bottom: 0px;

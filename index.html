@@ -15,7 +15,7 @@
 <body>
     <!-- Nav Bar- need to add login and sign up button -->
     <nav>
-      <a href="#" class="brand-logo djkg">DjKg</a>
+      <a href="#" class="brand-logo djkg">D..D..D...D...D...DjKg!!</a>
         <div class="nav-wrapper">
             <ul class="right hide-on-small-only">
                 <li><a href="sass.html"><i class="material-icons">search</i></a></li>
@@ -53,8 +53,8 @@
                     </div>
                 </div>
                 <!-- need to find a way to get a picture of a turntable-->
-                <h3>turntable1</h3>
-                <!-- <img src="images/table_platter.png" alt="turntable" /> -->
+                <!-- <h3>turntable1</h3> -->
+                <img class ="tablepic" src="images/turntable.jpg" alt="turntable" />
             </div>
             <div id="inbetween" class="col s2">
                 <!-- High, Medium, and Low dials need to connect to webapi -->
@@ -93,7 +93,14 @@
                 </div>
             </div>
             <div id="turntable2" class="col s5">
-                <h3>turntable2</h3>
+
+              <img class="tablepic" src="images/turntable.jpg" alt="turntable" />
+
+<!-- a start and stop button need to make it hidden and in the right spot on the turntable
+
+
+<a href="#onoff" title="start/stop" class="startstop" onclick="return false">start · stop</a> -->
+
                 <div class="row" border="2px solid">
                     <table>
                         <thead>
@@ -147,11 +154,6 @@
     </form>
     <div id="results"></div>
 </div>
-<script id="results-template" type="text/x-handlebars-template">
-    {{#each albums.items}}
-    <div style="background-image:url({{images.0.url}})" data-album-id="{{id}}" class="cover"></div>
-    {{/each}}
-</script>
             </div>
             <!--   Table containing the actual songs   -->
             <div class="folders col s8">

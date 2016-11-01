@@ -17,11 +17,11 @@
     //makes the dials the size we need
 $(".volumeDial").css("height", "25px");
 $(".volumeDial").css("width", "25px");
-// $(".volumeDial").css("float-left");
 
-//spotifys get album art
-var resultsPlaceholder = document.getElementById('results');
-
+//spotifys get album
+// var resultsPlaceholder = document.getElementById('results');
+var newRow = $("<tr>");
+var tdText = $("<td>");
 var searchAlbums = function (query) {
   $.ajax({
     url: 'https://api.spotify.com/v1/search',
@@ -31,7 +31,7 @@ var searchAlbums = function (query) {
     },
     success: function (response) {
       console.log(response);
-      resultsPlaceholder.innerHTML = response;
+      return (newRow.append(tdText, response), newRow.append(tdText,response));
     }
   });
 };
@@ -41,6 +41,4 @@ document.getElementById('search-form').addEventListener('submit', function (e) {
 }, false);
 
   }); // end of document ready
-
-
 })(jQuery); // end of jQuery name space
