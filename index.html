@@ -13,9 +13,15 @@
 </head>
 
 <body>
+    <!-- spotify quick fix music player
+<iframe src="https://embed.spotify.com/?uri=spotify:user:th33nd3r:playlist:5e0J77dz7FcguqDzFrIGE0" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+ -->
+
+
+
     <!-- Nav Bar- need to add login and sign up button -->
     <nav>
-      <a href="#" class="brand-logo djkg">D..D..D...D...D...DjKg!!</a>
+        <a href="#" class="brand-logo djkg">D..D..D...D...D...DjKg!!</a>
         <div class="nav-wrapper">
             <ul class="right hide-on-small-only">
                 <li><a href="sass.html"><i class="material-icons">search</i></a></li>
@@ -54,11 +60,11 @@
                 </div>
                 <!-- need to find a way to get a picture of a turntable-->
                 <!-- <h3>turntable1</h3> -->
-                <img class ="tablepic" src="images/turntable.jpg" alt="turntable" />
+                <img class="tablepic" src="images/turntable.jpg" alt="turntable" />
             </div>
             <div id="inbetween" class="col s2">
                 <!-- High, Medium, and Low dials need to connect to webapi -->
-<!-- <div class="bpm row">
+                <!-- <div class="bpm row">
 <p>
   hi
 </p>
@@ -87,16 +93,16 @@
 
                 </div>
                 <div class="row dials right-align">
-                  <input type="text" class="dial" data-min="0" data-max="100" hidden="">
-                  <input type="text" class="dial" data-min="0" data-max="100" hidden="">
-                  <input type="text" class="dial" data-min="0" data-max="100" hidden="">
+                    <input type="text" class="dial" data-min="0" data-max="100" hidden="">
+                    <input type="text" class="dial" data-min="0" data-max="100" hidden="">
+                    <input type="text" class="dial" data-min="0" data-max="100" hidden="">
                 </div>
             </div>
             <div id="turntable2" class="col s5">
 
-              <img class="tablepic" src="images/turntable.jpg" alt="turntable" />
+                <img class="tablepic" src="images/turntable.jpg" alt="turntable" />
 
-<!-- a start and stop button need to make it hidden and in the right spot on the turntable
+                <!-- a start and stop button need to make it hidden and in the right spot on the turntable
 
 
 <a href="#onoff" title="start/stop" class="startstop" onclick="return false">start · stop</a> -->
@@ -139,6 +145,7 @@
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
+
                     </div>
                 </div>
             </div>
@@ -148,12 +155,13 @@
         <div class="row">
             <div class="folders col s4">
                 <div class="container">
-    <form id="search-form">
-        <input type="text" id="query" value="" class="form-control" placeholder="Type an Artist Name"/>
-        <input type="submit" id="search" class="btn btn-primary" value="Search" />
-    </form>
-    <div id="results"></div>
-</div>
+                    <form id="search-form">
+                        <input type="text" id="query" value="" class="form-control" placeholder="Type an Artist Name" />
+                        <input type="submit" id="search" class="btn btn-primary" value="Search" />
+                    </form>
+                    <div id="results">
+                    </div>
+                </div>
             </div>
             <!--   Table containing the actual songs   -->
             <div class="folders col s8">
