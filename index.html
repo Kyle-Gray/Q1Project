@@ -163,8 +163,10 @@
                         <input type="text" id="query" value="" class="form-control" placeholder="Type an Artist Name" />
                         <input type="submit" id="search" class="btn btn-primary" value="Search" />
                     </form>
-                    <div id="results">
-                    </div>
+                    <form id="hiddensearch" hidden="">
+                      <input type="text" name="name" class="form-control" id="albumID" value="" placeholder="Type the Album ID" />
+                      <input type="submit" class="btn btn-primary" value="" />
+                    </form>
                 </div>
             </div>
             <!--   Table containing the actual songs   -->
@@ -174,8 +176,7 @@
                         <tr>
                             <th data-field="albumArt">Album Artwork</th>
                             <th data-field="album">Album</th>
-                            <th data-field="title">Title</th>
-                            <th data-field="bpm">BPM</th>
+                            <th data-field="id">Album ID</th>
                         </tr>
                     </thead>
                     <tbody id="maintable">
