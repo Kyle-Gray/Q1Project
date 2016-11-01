@@ -13,8 +13,6 @@
 
         //spotifys API call
 
-
-        //  (newRow.append(tdText, response), newRow.append(tdText,response);
         var resultsPlaceholder = document.getElementById('results');
 
 
@@ -32,16 +30,23 @@
                     var albumArray = response.albums.items;
                     for (var i = 0; i < albumArray.length; i++) {
                       var albumArtArray = albumArray[i]["images"];
+
                       arr1.push(albumArray[i]["name"]);
                       arr2.push(albumArtArray[2]["url"]);
                       // console.log(arr1);
 
+                      var newRow = $("<tr>");
+                      var newColumn = $("<td>");
+                      var albumNames = $("<td>");
+                      $("#maintable").append(newRow);
+                      newRow.append(newColumn, albumNames);
+                       newColumn.append("<img src=" + arr2[i] + ">");
+                       albumNames.append(arr1[i]);
+
                     }
-                    console.log(arr2[0]);
-                    var newRow = $("tr");
-                    newRow.append($("td"),"<img src=" + arr2[0] + ">");
-                    console.log("<img src=" + arr2[0] + "/>");
-                    resultsPlaceholder.innerHTML = "<img src=" + arr2[0] + ">";
+              
+                    console.log(response);
+                    resultsPlaceholder.innerHTML = response;
                 }
             });
         };

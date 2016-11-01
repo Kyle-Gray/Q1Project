@@ -50,6 +50,7 @@ footer.page-footer{
 .folders{
   border: 2px solid;
   height: 300px;
+  overflow: scroll;
 }
 /*spotifys album art fetcher!*/
 #search-form, .form-control {
