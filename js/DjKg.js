@@ -44,9 +44,9 @@
                        albumNames.append(arr1[i]);
 
                     }
-              
-                    console.log(response);
-                    resultsPlaceholder.innerHTML = response;
+
+                    // console.log(response);
+                    // resultsPlaceholder.innerHTML = response;
                 }
             });
         };

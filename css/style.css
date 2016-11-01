@@ -18,7 +18,7 @@ padding-left: 10px;
 }
 #turntable2{
   display: flex;
-    height: 250px;
+  height: 250px;
   float: right;
   border: 2px solid;
   padding-left: 0px;
@@ -56,27 +56,24 @@ footer.page-footer{
 #search-form, .form-control {
     margin-bottom: 20px;
 }
-.cover {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-size: cover;
-}
-.cover:hover {
-    cursor: pointer;
-}
-.cover.playing {
-    border: 5px solid #e45343;
-}
+
 .img{
   height: 100%;
   width: 100%;
 }
-.bpm .row{
-display: flex;
-border: 2px solid;
+.row .col{
+padding: 0;
 }
 .dials{
   padding-top: 3rem;
   vertical-align: middle;
+}
+.play{
+  background-color: red;
+}
+.soundeff{
+  padding: .1rem;
+}
+.right{
+  margin-left:.25rem;
 }
