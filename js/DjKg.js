@@ -46,10 +46,11 @@
                     var albumNames = $("<td>");
                     var newColumn = $("<td>");
                     $("#theadtable").append(newRow, albumNames, newColumn);
-                    var tracknum = $("<th>Number</th>");
-                    var tracknames = $("<th>Track</th>");
-                    albumNames.append(tracknames);
+                    var tracknum = $("<th>Track</th>");
+                    var tracknames = $("<th>Number</th>");
                     newColumn.append(tracknum);
+
+                    albumNames.append(tracknames);
                     // trying to get sound on page
                     // var playingCssClass = 'playing';
                     var audioObject = null;
@@ -142,6 +143,8 @@
           $(".toptable2").append($(this).html());
           });
 
+// add Audio objects to create sound effects
+
           $(".subfocus").on('click', function(){
             var audioObject2 = new Audio("https://p.scdn.co/mp3-preview/de8fecf22f44c90f93168b7ed2ff6d114045abf0");
             audioObject2.play();
@@ -200,9 +203,20 @@
 
 
 
-        // Get track preview from within the albums that we just searched use this code to help you understand audio api!!
 
 
+//     var context = new AudioContext(),
+//     sineWave = context.createOscillator(),
+//     gainNode = context.createGainNode();
+//
+// sineWave.frequency.value = 900;
+// sineWave.connect(gainNode);
+// gainNode.connect(context.audioObject2);
+// sineWave.noteOn(0);
+//
+// document.getElementById('volume').addEventListener('change', function() {
+//     gainNode.gain.value = this.value;
+// });
 
 
 
