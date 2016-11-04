@@ -38,21 +38,14 @@
             <div id="turntable1" class="col s5">
                 <div class="row" border="2px solid">
                     <div class="row">
-                        <table>
+                        <table class="toptable">
                             <thead>
-                                <tr>
-                                    <th data-field="albumArtWork">Album Art</th>
-                                </tr>
-                                <tr>
-                                    <th data-field="artist">Artist</th>
-                                </tr>
-                                <tr>
-                                    <th data-field="album">Album</th>
-                                    <th data-field="length">Length</th>
-                                </tr>
                             </thead>
                             <tbody>
                                 <tr>
+                                  <p>
+                                    Cover Art
+                                  </p>
                                 </tr>
                             </tbody>
                         </table>
@@ -80,7 +73,7 @@
                     <!-- Volume range for turntable2 -->
                     <form action="#">
                         <p class="range-field">
-                          Right table
+                            Right table
                             <input type="range" id="table2" min="0" max="100" />
                         </p>
                     </form>
@@ -102,58 +95,66 @@
 <a href="#onoff" title="start/stop" class="startstop" onclick="return false">start · stop</a> -->
 
                 <div class="row" border="2px solid">
-                    <table>
+                    <table class="toptable">
                         <thead>
-                            <tr>
-                                <th data-field="albumArtWork">Album Art</th>
-                            </tr>
-                            <tr>
-                                <th data-field="artist">Artist</th>
-                            </tr>
-                            <tr>
-                                <th data-field="album">Album</th>
-                                <th data-field="length">Length</th>
-                            </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                            </tr>
+                          <tr>
+                          <p>
+                            Cover Art
+                          </p>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s5">
-                  <a class="play waves-effect waves-light btn right">Play</a>
-                  <a class="btn soundeff right">Sounds</a>
-                  <a class="btn soundeff right">Sounds</a>
-                  <a class="btn soundeff right">Sounds</a>
-
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
-                    </div>
-                </div>
-
-                <div class="col s2">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
-                    </div>
-                </div>
-
-                <div class="col s5">
-                    <div class="icon-block">
-                      <a class="play waves-effect waves-light btn">Play</a>
-                      <a class="btn soundeff">Sounds</a>
-                      <a class="btn soundeff">Sounds</a>
-                      <a class="btn soundeff">Sounds</a>
-
-                        <h2 class="center light-blue-text"><i class="material-icons">disc_full</i></h2>
-
-                    </div>
+        </div>
+        <!--   button Section   -->
+        <div class="row">
+            <div class="col s5">
+                <div class="icon-block">
+                    <a class="play waves-effect waves-light btn right">Play</a>
+                    <a class="btn soundeff right">Sounds</a>
+                    <a class="btn soundeff right">Sounds</a>
+                    <a class="btn soundeff right">Sounds</a>
                 </div>
             </div>
 
+            <div class="col s2">
+                <div class="icon-block">
+                  <p dimgray>
+                    placeholder
+                  </p>
+                </div>
+            </div>
+
+            <div class="col s5">
+                <div class="icon-block">
+                    <a class="play waves-effect waves-light btn">Play</a>
+                    <a class="btn soundeff">Sounds</a>
+                    <a class="btn soundeff">Sounds</a>
+                    <a class="btn soundeff">Sounds</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Favorite Album Section -->
+        <div class="row">
+            <div class="col s4">
+                <img src="images/beatles.jpg" alt="beatles album" />
+                <img src="images/cashcash.jpg" alt="cashcash album" />
+                <img src="images/rush.jpg" alt="rush album" />
+            </div>
+            <div class="col s4">
+                <img src="images/nero.jpg" alt="nero album" />
+                <img src="images/Dark_Moon.png" alt="pink floyd album" />
+                <img src="images/mothership.jpg" alt="" />
+            </div>
+            <div class="col s4">
+                <img src="images/OuttheBlue.jpg" alt="Sub Focus album" />
+                <img src="images/zztop.jpg" alt="" />
+                <img src="images/dead.jpg" alt="" />
+            </div>
         </div>
         <!--   Search Form to check your folders for songs   -->
         <div class="row">
@@ -164,15 +165,15 @@
                         <input type="submit" id="search" class="btn btn-primary" value="Search" />
                     </form>
                     <form id="hiddensearch" hidden="">
-                      <input type="text" name="name" class="form-control" id="albumID" value="" placeholder="Type the Album ID" />
-                      <input type="submit" class="btn btn-primary" value="" />
+                        <input type="text" name="name" class="form-control" id="albumID" value="" placeholder="Type the Album ID" />
+                        <input type="submit" class="btn btn-primary" value="" />
                     </form>
                 </div>
             </div>
             <!--   Table containing the actual songs   -->
             <div class="folders col s8">
                 <table class="responsive-table striped">
-                    <thead>
+                    <thead id="theadtable">
                         <tr>
                             <th data-field="albumArt">Album Artwork</th>
                             <th data-field="album">Album</th>
@@ -187,12 +188,21 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="page-footer dark-grey">
+    <footer class="page-footer">
         <div class="row">
-            <div id="copyright" class="col s6">
-                Made by <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/kyle-gray">KG.inc</a>
+            <div id="copyright" class="col s4">
+                <p>
+                    Made by:
+                </p>
+                <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/kyle-gray">KG.inc</a>
             </div>
-            <div class="right-align col s6">
+            <div class="col s4">
+                <p>
+                    <!-- made possible by spotify -->
+
+                </p>
+            </div>
+            <div class="right-align col s4">
                 <p class="grey-text text-lighten-4">Follow Me!</p>
                 <a href="kyle-gray.surge.sh"><i class="material-icons ">public</i></a>
                 <a href="facebook.com"><i class="material-icons ">face</i></a>

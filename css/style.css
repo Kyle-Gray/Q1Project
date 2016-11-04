@@ -1,4 +1,6 @@
 /* Custom Stylesheet */
+
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
@@ -6,74 +8,117 @@
  * Made By MaterializeCSS.com
  */
 
-nav .brand-logo, .djkg{
-padding-left: 10px;
-}
-#turntable1{
-  display: flex;
-  height: 250px;
-  float: left;
-  border: 2px solid;
-  padding-right: 0px;
-}
-#turntable2{
-  display: flex;
-  height: 250px;
-  float: right;
-  border: 2px solid;
-  padding-left: 0px;
-}
-#inbetween{
-  display: flex;
-  height: 250px;
-  /*border: 2px solid;*/
-  bottom: auto;
-  min-width: 100px;
+body {
+    background-color: dimgray;
 }
 
-#copyright{
-  height: 80px;
-  vertical-align: baseline;
+nav {
+    background-color: black;
 }
-footer.page-footer{
-  padding-top: 0px;
+
+nav .brand-logo, .djkg {
+    padding-left: 10px;
 }
-.dials{
-  float: right;
+
+#turntable1 {
+    display: flex;
+    height: 250px;
+    float: left;
+    border: 2px solid;
+    padding-right: 0px;
 }
-.tablepic{
-  width: 70%;
+
+#turntable2 {
+    display: flex;
+    height: 250px;
+    float: right;
+    border: 2px solid;
+    padding-left: 0px;
 }
-.row{
-  margin-bottom: 0px;
+
+#inbetween {
+    display: flex;
+    height: 250px;
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+    bottom: auto;
+    min-width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-.folders{
-  border: 2px solid;
-  height: 300px;
-  overflow: scroll;
+
+#copyright {
+    height: 80px;
 }
+
+footer.page-footer {
+    padding-top: 0px;
+    background-color: black;
+    margin-top: 0px;
+    color: white;
+}
+
+.dials {
+    float: right;
+}
+
+.tablepic {
+    width: 70%;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+.folders {
+    border: 2px solid;
+    height: 300px;
+    overflow: scroll;
+    background-color: dimgray;
+}
+
+
 /*spotifys album art fetcher!*/
+
+.cover:hover {
+    cursor: pointer;
+}
+
+.cover.playing {
+    border: 2px solid #e45343;
+}
+
 #search-form, .form-control {
     margin-bottom: 20px;
+    padding-top: 7px;
 }
 
-.img{
-  height: 100%;
-  width: 100%;
+.s4 img {
+    height: 100px;
+    width: 125px;
 }
-.row .col{
-padding: 0;
+
+.row .col {
+    padding: 0;
 }
-.dials{
-  padding-top: 3rem;
-  vertical-align: middle;
+
+.dials {
+    padding-top: 3rem;
+    vertical-align: middle;
 }
-.play{
-  background-color: red;
+
+.play {
+    background-color: red;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.soundeff{
-  padding: .1rem;
+
+.soundeff {
+    /*padding: .rem;*/
+    margin-left: 5px;
+    margin-right: 5px;
 }
-.right{
-  margin-left:.25rem;
+
+.right {
+    margin-left: .25rem;
 }
