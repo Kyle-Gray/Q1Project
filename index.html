@@ -95,7 +95,7 @@
 <a href="#onoff" title="start/stop" class="startstop" onclick="return false">start · stop</a> -->
 
                 <div class="row" border="2px solid">
-                    <table class="toptable">
+                    <table class="toptable2">
                         <thead>
                         </thead>
                         <tbody>
@@ -110,21 +110,19 @@
             </div>
         </div>
         <!--   button Section   -->
-        <div class="row">
+        <div class="row buttons">
             <div class="col s5">
                 <div class="icon-block">
                     <a class="play waves-effect waves-light btn right">Play</a>
                     <a class="btn soundeff right">Sounds</a>
-                    <a class="btn soundeff right">Sounds</a>
-                    <a class="btn soundeff right">Sounds</a>
+                    <a class="btn soundeff2 right">Sounds</a>
+                    <a class="btn soundeff3 right">Sounds</a>
                 </div>
             </div>
 
             <div class="col s2">
-                <div class="icon-block">
-                  <p dimgray>
-                    placeholder
-                  </p>
+                <div class="icon-block" style="center">
+                  <button class="clearbutton" type="button" name="clearall" center>Clear</button>
                 </div>
             </div>
 
@@ -132,28 +130,40 @@
                 <div class="icon-block">
                     <a class="play waves-effect waves-light btn">Play</a>
                     <a class="btn soundeff">Sounds</a>
-                    <a class="btn soundeff">Sounds</a>
-                    <a class="btn soundeff">Sounds</a>
+                    <a class="btn soundeff2">Sounds</a>
+                    <a class="btn soundeff3">Sounds</a>
                 </div>
             </div>
         </div>
 
         <!-- Favorite Album Section -->
-        <div class="row">
-            <div class="col s4">
-                <img src="images/beatles.jpg" alt="beatles album" />
+        <div class="row" style="display:flex;">
+            <div class="col s1 cashcash">
                 <img src="images/cashcash.jpg" alt="cashcash album" />
-                <img src="images/rush.jpg" alt="rush album" />
             </div>
-            <div class="col s4">
+            <div class="col s1 nero" style="playingCssClass">
                 <img src="images/nero.jpg" alt="nero album" />
-                <img src="images/Dark_Moon.png" alt="pink floyd album" />
-                <img src="images/mothership.jpg" alt="" />
             </div>
-            <div class="col s4">
+
+            <div class="col s1 subfocus" style="playingCssClass">
                 <img src="images/OuttheBlue.jpg" alt="Sub Focus album" />
-                <img src="images/zztop.jpg" alt="" />
-                <img src="images/dead.jpg" alt="" />
+            </div>
+            <div class="col s1 zepp" style="playingCssClass">
+              <img src="images/mothership.jpg" alt="" />
+            </div>
+            <div class="col s1 rush" style="playingCssClass">
+              <img src="images/rush.jpg" alt="rush album" />
+
+            </div>
+            <div class="col s1 zztop" style="playingCssClass">
+              <img src="images/zztop.jpg" alt="" />
+            </div>
+            <div class="col s1" style="playingCssClass">
+              <img src="images/dead.jpg" alt="" />
+
+            </div>
+            <div class="col s1 pinkfloyd" style="playingCssClass">
+              <img src="images/Dark_Moon.png" alt="pink floyd album" />
             </div>
         </div>
         <!--   Search Form to check your folders for songs   -->
@@ -165,8 +175,8 @@
                         <input type="submit" id="search" class="btn btn-primary" value="Search" />
                     </form>
                     <form id="hiddensearch" hidden="">
-                        <input type="text" name="name" class="form-control" id="albumID" value="" placeholder="Type the Album ID" />
-                        <input type="submit" class="btn btn-primary" value="" />
+                        <input type="text" name="name" class="form-control" id="albumID" value=""/>
+                        <input type="submit" class="btn btn-primary" value="Search" />
                     </form>
                 </div>
             </div>
@@ -177,7 +187,7 @@
                         <tr>
                             <th data-field="albumArt">Album Artwork</th>
                             <th data-field="album">Album</th>
-                            <th data-field="id">Album ID</th>
+                            <th data-field="id" hidden>Album ID</th>
                         </tr>
                     </thead>
                     <tbody id="maintable">
@@ -197,8 +207,8 @@
                 <a class="orange-text text-lighten-3" href="https://www.linkedin.com/in/kyle-gray">KG.inc</a>
             </div>
             <div class="col s4">
-                <p>
-                    <!-- made possible by spotify -->
+                <p style="margin-top: 50px">
+                    made possible by spotify and audiosoundclips.com
 
                 </p>
             </div>

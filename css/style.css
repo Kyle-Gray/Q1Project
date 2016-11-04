@@ -77,7 +77,9 @@ footer.page-footer {
     background-color: dimgray;
 }
 
-
+.clearbutton{
+  margin-left: 5em;
+}
 /*spotifys album art fetcher!*/
 
 .cover:hover {
@@ -93,11 +95,16 @@ footer.page-footer {
     padding-top: 7px;
 }
 
-.s4 img {
+.s1 img {
+    height: 100px;
+    width: 125px;
+    flex-basis: auto;
+    padding-right: 20px;
+}
+.toptable2 img{
     height: 100px;
     width: 125px;
 }
-
 .row .col {
     padding: 0;
 }
@@ -113,12 +120,21 @@ footer.page-footer {
     margin-right: 5px;
 }
 
+.row .col .s1{
+  /*padding-left: 10px;*/
+  /*display: flex;*/
+}
+
 .soundeff {
-    /*padding: .rem;*/
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .right {
     margin-left: .25rem;
+}
+
+.row .buttons{
+  padding-bottom: 10px;
+  display: flex;
 }
