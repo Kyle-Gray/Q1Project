@@ -58,15 +58,6 @@
                         audioObject = new Audio(previewurls[0]);
                         audioObject.play();
 
-                        // audioObject.addEventListener('ended', function() {
-                        //     target.classList.remove(playingCssClass);
-                        // });
-                        //
-                        // audioObject.addEventListener('pause', function() {
-                        //   audioObject.pause();
-                        //     target.classList.remove(playingCssClass);
-                        // });
-
                   });
                 }
             });
@@ -199,26 +190,6 @@
             var audioObject12 = new Audio("https://p.scdn.co/mp3-preview/c1f024eb57b569b926c8e68cab0a6056dc7d9654");
             audioObject12.play();
           });
-
-
-
-
-
-
-//     var context = new AudioContext(),
-//     sineWave = context.createOscillator(),
-//     gainNode = context.createGainNode();
-//
-// sineWave.frequency.value = 900;
-// sineWave.connect(gainNode);
-// gainNode.connect(context.audioObject2);
-// sineWave.noteOn(0);
-//
-// document.getElementById('volume').addEventListener('change', function() {
-//     gainNode.gain.value = this.value;
-// });
-
-
 
     }); // end of document ready
 })(jQuery); // end of jQuery name space
