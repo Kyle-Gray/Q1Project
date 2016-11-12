@@ -19,4 +19,4 @@ Using the search bar at the bottom left corner of the page you can search Spotif
 ## WireFrame
 
 
-![wireframe2](/images/readme/wireframe2.png)
+![wireframe2](/images/readme/wireframe.png)
