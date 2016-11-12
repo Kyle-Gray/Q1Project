@@ -16,11 +16,7 @@ Using the search bar at the bottom left corner of the page you can search Spotif
 
 
 
-## WireFrames
-![wireframe1](/images/readme/wireframe1.jpg)
+## WireFrame
 
 
-
-
-
-![wireframe2](/images/readme/wireframe2.jpg)
+![wireframe2](/images/readme/wireframe2.png)
